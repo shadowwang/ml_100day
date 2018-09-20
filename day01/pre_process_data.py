@@ -19,7 +19,7 @@ print(Y)
 
 imputer = Imputer(missing_values = "NaN", strategy = "mean", axis = 0)
 imputer = imputer.fit(X[ : , 1:3])
-X[ : , 1:3] = imputer.transform(X[ : , 1:3])
+X[ : , 1:3] = imputer.transform(X[ : , 1:3])##取所有纬度数据里第1列到第3列的值
 print("---------------------")
 print("Step 3: 处理丢失数据")
 print("X")
